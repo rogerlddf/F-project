@@ -1,0 +1,18 @@
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  min-width: 900px;
+  width: 100%;
+  margin-left: 225px;
+  z-index: 0;
+}
+
+.no-side {
+  margin-left: 0px;
+}

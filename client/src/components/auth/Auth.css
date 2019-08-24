@@ -1,0 +1,167 @@
+
+.base-wrapper {
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  padding: 15vh 0% 0% 0%;
+  width: 100%;
+  background: rgb(0,0,0);
+  background: -moz-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(43,43,43,1) 38%, rgba(94,94,94,1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(43,43,43,1) 38%, rgba(94,94,94,1) 100%);
+  background: linear-gradient(0deg, rgba(0,0,0,1) 0%, rgba(43,43,43,1) 38%, rgba(94,94,94,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#5e5e5e",GradientType=1);
+  position: relative;
+}
+
+.base-wrapper:before {
+    content: '';
+    position: absolute;
+    top: 5%;
+    left: 2%;
+    background-image: url("../../img/dold-skull-intro.png");
+    width: 5em;
+    height: 5em;
+    transition: transform .4s ease 0s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    z-index: 1;
+}
+
+.auth-header {
+  color: white;
+  font-size: 4em;
+  margin-bottom: 1rem;
+  font-weight: 900;
+  position: relative;
+  z-index: 9;
+  line-height: 1.1;
+  margin-left: 5%;
+}
+
+.auth-header strong{
+    display: block;
+    color: #7fb6d4;
+}
+
+.demo {
+  font-size: 14px;
+  margin-top: -0.25rem;
+  text-align: center;
+  width: 300px;
+  line-height: 1.25rem;
+}
+
+.code-mail {
+  font-family: inherit;
+}
+
+
+.code-mail:hover {
+    cursor: pointer;
+    color: blue;
+  }
+
+.auth-form {
+  width: 90%;
+  background-color: white;
+  padding: 2rem 3rem;
+  box-shadow: 0px 0px 20px 5px #00000099;
+  position: relative;
+  background-color: #e4e4e4;
+  z-index: 9;
+}
+
+.auth-group {
+  margin-bottom: 1rem;
+}
+
+.auth-label {
+  width: 100%;
+  padding-right: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 14px;
+  color: black;
+  font-family: inherit;
+}
+
+.auth-input {
+  border: 1px solid grey;
+  border-radius: 4px;
+  height: 40px;
+  width: 100%;
+  line-height: 1.5em;
+  outline: 0;
+  transition: all 0.25s ease 0s;
+  font-size: 16px;
+  padding: 0 1rem;
+}
+
+
+  .auth-input:focus {
+    border-color: blue;
+    transition: all 0.25s ease 0s;
+  }
+
+.auth-error {
+  margin-top: 0.5rem;
+  color: red;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+.auth-button {
+  height: 40px;
+  margin-top: 1rem;
+  color: #ffffff;
+  background-color: #2f6e91;
+  border-radius: 4px;
+  width: 100%;
+  font-size: 16px;
+  font-weight: 900;
+  font-family: inherit;
+  transition: all 0.25s ease 0s;
+
+}
+
+.auth-button:hover {
+  background-color: black;
+  transform: translateY(-2.5px);
+  cursor: pointer;
+  transition: all 0.25s ease 0s;
+}
+
+.bottom-group {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.link {
+  color: black;
+  text-decoration: none;
+  font-family: inherit;
+  transition: all 0.25s ease 0s;
+  padding: 0.25rem;
+}
+
+.link:hover {
+    color: #2f6e91;
+    transform: translateY(-2.5px);
+    transition: all 0.25s ease 0s;
+  }
+
+@media (max-width: 800px) {
+  .bottom-group {
+    flex-direction: column;
+    padding-left: 0px;
+  }
+
+  .link {
+    margin: 0.25rem 0;
+  }
+
+  .auth-form {
+    width: 80%;
+  }
+}

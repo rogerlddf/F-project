@@ -1,0 +1,131 @@
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 2px solid #fafafa;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    min-width: 1100px;
+    z-index: 1000;
+}
+
+
+.top-nav:before {
+    content: '';
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    background-image: url("../../../img/dold-skull-intro.png");
+    width: 5em;
+    height: 85%;
+    transition: transform .4s ease 0s;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 0%;
+    z-index: 1;
+}
+/* Left side of nav */
+.left-top {
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+}
+.left-top .hamburger-top-menu {
+    font-size: 20px;
+    transition: all 0.25s ease 0s;
+    display: none;
+}
+.left-top .hamburger-top-menu:hover {
+    cursor: pointer;
+}
+/* Right side of nav */
+.right-top {
+    display: flex;
+    list-style: none;
+    align-items: center;
+    margin-right: 225px;
+    transition: all 0.25s ease 0s;
+}
+.right-top .email {
+    font-size: 10px;
+    margin-right: 1rem;
+    color: #616161;
+    text-align: right;
+    line-height: 0.5rem;
+    margin-top: 5%;
+    margin-bottom: -5%;
+}
+.right-top .sign-out {
+    background-color: #fafafa;
+    color: #616161;
+    text-decoration: none;
+    transition: all 0.25s ease 0s;
+    padding: 0.25rem;
+    display: inline-block;
+}
+.right-top .sign-out:hover {
+    color: #1652f0;
+    transform: translateY(-2.5px);
+    transition: all 0.25s ease 0s;
+    cursor: pointer;
+}
+.right-top .profile {
+    height: 15px;
+    width: 15px;
+    padding: 1.25rem;
+    font-size: 12px;
+    background-color: #2f6e91;;
+    color: #fff;
+    margin-right: 2rem;
+    font-weight: 900;
+    display: inline-block;
+    user-select: none;
+    transition: all 0.25s ease 0s;
+}
+.right-top .profile:hover {
+    opacity: 0.9;
+    cursor: pointer;
+    transition: all 0.25s ease 0s;
+}
+.right-top .dropdown {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e0e0e0;
+    background-color: #fff;
+    padding: 1rem;
+    transform: translate(-9rem, 1.5rem);
+}
+.right-top .dropdown p {
+    width: 140px;
+    color: #616161;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    font-size: 12px;
+}
+.right-top .dropdown li {
+    width: 140px;
+    padding: 1rem;
+    color: #212121;
+    background-color: #fff;
+    transition: all 0.25s ease 0s;
+    font-size: 14px;
+}
+.right-top .dropdown li:hover {
+    cursor: pointer;
+    color: #1652f0;
+    background-color: #fafafa;
+    transition: all 0.25s ease 0s;
+}
+.hamburger-visible {
+    display: block !important;
+}
+.right-top-visibile {
+    margin-right: 0px;
+    transition: all 0.25s ease 0s;
+}
+
+.right-top .profile span{
+    color: white;
+}
